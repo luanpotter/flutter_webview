@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_webview/flutter_webview.dart';
 
+const LAUNCH_BUTTON = const Key('launch-button');
+
 void main() {
   SystemChrome.setEnabledSystemUIOverlays([]);
   SystemChrome.setPreferredOrientations([DeviceOrientation.landscapeLeft]);
@@ -23,6 +25,7 @@ class _MyAppState extends State<MyApp> {
         ),
         body: new Center(
           child: new FlatButton(
+            key: LAUNCH_BUTTON,
             child: new Text('Launch google'),
             onPressed: () async {
               String url = 'https://www.google.com';

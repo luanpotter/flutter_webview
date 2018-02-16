@@ -1,8 +1,8 @@
 name: flutter_webview
-description: A new flutter plugin project.
+description: An alternative webview, with a close button
 version: 0.0.1
-author:
-homepage:
+author: Luan Nico <luannico27@gmail.com>
+homepage: https://github.com/luanpotter/flutter_webview
 
 dependencies:
   flutter:
