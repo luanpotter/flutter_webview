@@ -39,6 +39,7 @@ public class FlutterWebviewPlugin implements MethodCallHandler {
             webView = new WebView(activity);
             WebViewClient webViewClient = new WebViewClient();
             webView.setWebViewClient(webViewClient);
+            webView.getSettings().setJavaScriptEnabled(true);
             webView.loadUrl(url);
             activity.addContentView(webView, params);
 
